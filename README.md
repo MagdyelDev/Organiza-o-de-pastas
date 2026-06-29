@@ -1,6 +1,8 @@
-Por que é importante separar os arquivos de frontend e backend?
+**Por que é importante separar os arquivos de frontend e backend?**
 Porque eles têm responsabilidades completamente diferentes. O frontend cuida de tudo que o usuário vê e interage, enquanto o backend lida com a lógica do servidor, banco de dados e regras do sistema. Quando estão separados, fica muito mais fácil entender o projeto, trabalhar em equipe e até trocar uma tecnologia sem quebrar a outra.
-1. Dificuldades quando tudo fica misturado
+
+**Dificuldades quando tudo fica misturado**
 Você perde tempo procurando arquivos conforme o projeto cresce. O risco de expor arquivos sensíveis do servidor por acidente aumenta bastante. O trabalho em equipe gera conflitos o tempo todo porque todo mundo mexe nas mesmas pastas. E a manutenção fica lenta e frustrante porque nada tem um lugar definido.
-2. Outras melhorias de organização
+
+**Outras melhorias de organização**
 Criar um arquivo .env para guardar senhas e configurações sensíveis fora do código é essencial. Um .gitignore evita que a pasta node_modules e o .env sejam enviados pro GitHub. No backend, uma pasta controllers/ separaria a lógica das rotas, deixando o routes/ apenas para definir os caminhos. E um README.md bem escrito explicando como rodar o projeto economiza muito tempo de qualquer pessoa que for mexer nisso depois.
